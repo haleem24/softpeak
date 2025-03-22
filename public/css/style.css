@@ -1,0 +1,309 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #1F2937;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    position: sticky;
+    top: 0;
+    background: #FFFFFF;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1E3A8A;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #7C3AED;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1E3A8A, #7C3AED);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* CTA Button */
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #7C3AED;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #1E3A8A;
+}
+
+/* Services Teaser (Home) */
+.services-teaser {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services-teaser div {
+    flex: 1;
+    padding: 20px;
+}
+
+.services-teaser h3 {
+    color: #1E3A8A;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.services-teaser p {
+    color: #1F2937;
+    font-weight: 300;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+    background: #F9FAFB;
+}
+
+.testimonials h2 {
+    color: #1E3A8A;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #1F2937;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #7C3AED;
+    font-size: 0.9em;
+}
+
+/* Services Page */
+.services {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h1 {
+    color: #1E3A8A;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.service-item {
+    margin: 40px 0;
+}
+
+.service-item h2 {
+    color: #1E3A8A;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.service-item p {
+    font-weight: 300;
+}
+
+/* About Page */
+.about {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h1, .about h2 {
+    color: #1E3A8A;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about h1 {
+    font-size: 2.5em;
+}
+
+.about h2 {
+    font-size: 1.8em;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.about li {
+    margin: 15px 0;
+    font-weight: 300;
+}
+
+/* Contact Page */
+.contact {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #1E3A8A;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    color: #1E3A8A;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #1E3A8A;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.success {
+    color: #7C3AED;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-top: 30px;
+}
+
+.contact-details a {
+    color: #1E3A8A;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    color: #7C3AED;
+}
+
+/* Footer */
+footer {
+    background: #1F2937;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-logo {
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .services-teaser {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .services-teaser div {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+    }
+}
