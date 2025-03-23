@@ -30,7 +30,7 @@
             <div class="contact-details">
                 <p>Email: <a href="mailto:info@softpeak.co.uk">info@softpeak.co.uk</a></p>
                 <p>Phone: <a href="tel:+447506015170">+44 7506 015170</a> (Available Monday to Friday, 9 AM to 5 PM GMT)</p>
-                <p>Location: Sunbury on Thames, London, UK, TW16 7TU—conveniently located to serve businesses across the UK</p>
+                <p>Location: Sunbury on Thames, London, UK - conveniently located to serve businesses across the UK</p>
             </div>
         </div>
     </section>

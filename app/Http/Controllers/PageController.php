@@ -23,7 +23,6 @@ class PageController extends Controller
     public function contact() {
         return view('contact');
     }
-
     public function sendContact(Request $request) {
         // Validate and handle contact form (e.g., save to DB or email)
         $request->validate([
