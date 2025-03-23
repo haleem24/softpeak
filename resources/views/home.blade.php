@@ -13,7 +13,7 @@
         <div>
             <img src="{{ asset('images/custom-software.jpg') }}" alt="Custom Software" class="service-icon">
             <h3>Custom Software</h3>
-            <p>At SoftPeak, we specialize in building bespoke ERP and POS systems from the ground up. Our solutions are designed to address your unique business challenges, delivering efficiency gains—like the 2.5x productivity boost we achieved for clients in invoicing workflows. Whether you’re a startup or an established enterprise, we create software that scales with your ambitions, ensuring seamless integration and long-term reliability.</p>
+            <p>At SoftPeak, we specialize in building bespoke ERP and POS systems from the ground up. Our solutions are designed to address your unique business challenges, delivering efficiency gains. Whether you’re a startup or an established enterprise, we create software that scales with your ambitions, ensuring seamless integration and long-term reliability.</p>
         </div>
         <div>
             <img src="{{ asset('images/app-development.jpg') }}" alt="App Development" class="service-icon">
