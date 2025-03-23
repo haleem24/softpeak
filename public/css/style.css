@@ -52,22 +52,42 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #1E3A8A, #7C3AED);
+    position: relative;
     color: #FFFFFF;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
-    font-size: 2.8em;
+    font-size: 3em;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* CTA Button */
@@ -90,8 +110,8 @@ nav a:hover {
 .services-teaser {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    padding: 60px 20px;
+    gap: 30px;
+    padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -102,21 +122,29 @@ nav a:hover {
     padding: 20px;
 }
 
+.services-teaser .service-icon {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 .services-teaser h3 {
     color: #1E3A8A;
     font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-size: 1.6em;
 }
 
 .services-teaser p {
     color: #1F2937;
     font-weight: 300;
+    font-size: 1.1em;
 }
 
 /* Testimonials */
 .testimonials {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
     background: #F9FAFB;
 }
@@ -124,27 +152,33 @@ nav a:hover {
 .testimonials h2 {
     color: #1E3A8A;
     font-weight: 700;
-    margin-bottom: 30px;
-    font-size: 2em;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+}
+
+.testimonial {
+    margin: 20px 0;
 }
 
 .testimonial p {
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #1F2937;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .testimonial span {
     display: block;
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: 300;
     color: #7C3AED;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 /* Services Page */
 .services {
-    padding: 60px 20px;
+    padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -153,28 +187,70 @@ nav a:hover {
 .services h1 {
     color: #1E3A8A;
     font-weight: 700;
-    margin-bottom: 20px;
-    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-size: 2.8em;
+}
+
+.services > p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .service-item {
-    margin: 40px 0;
+    margin: 60px 0;
+}
+
+.service-item .service-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .service-item h2 {
     color: #1E3A8A;
     font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-size: 2em;
 }
 
 .service-item p {
     font-weight: 300;
+    font-size: 1.1em;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Service CTA Section */
+.service-cta {
+    background: #F9FAFB;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.service-cta h2 {
+    color: #1E3A8A;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.service-cta p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 
 /* About Page */
 .about {
-    padding: 60px 20px;
+    padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -183,59 +259,104 @@ nav a:hover {
 .about h1, .about h2 {
     color: #1E3A8A;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .about h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
 }
 
 .about h2 {
-    font-size: 1.8em;
+    font-size: 2em;
+}
+
+.about p {
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.about-team {
+    margin: 40px 0;
+}
+
+.about-team .team-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .about ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .about li {
     margin: 15px 0;
     font-weight: 300;
+    font-size: 1.1em;
 }
 
 /* Contact Page */
 .contact {
-    padding: 60px 20px;
+    position: relative;
+    padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
+.contact-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+}
+
 .contact h1 {
     color: #1E3A8A;
     font-weight: 700;
-    margin-bottom: 20px;
-    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-size: 2.8em;
+}
+
+.contact p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 40px;
 }
 
 .form-group {
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .form-group label {
     display: block;
     font-weight: 700;
     color: #1E3A8A;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    max-width: 400px;
-    padding: 10px;
+    max-width: 450px;
+    padding: 12px;
     border: 1px solid #1E3A8A;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -248,11 +369,16 @@ nav a:hover {
 .success {
     color: #7C3AED;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .contact-details {
-    margin-top: 30px;
+    margin-top: 40px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    margin: 10px 0;
 }
 
 .contact-details a {
@@ -269,7 +395,7 @@ footer {
     background: #1F2937;
     color: #FFFFFF;
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 20px;
 }
 
 .footer-logo {
@@ -287,23 +413,43 @@ footer {
 
     .services-teaser {
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
     }
 
     .services-teaser div {
         width: 100%;
-        padding: 10px;
+        padding: 15px;
+    }
+
+    .services-teaser .service-icon {
+        max-width: 150px;
     }
 
     .hero h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     .hero p {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .cta-btn {
-        padding: 10px 20px;
+        padding: 10px 25px;
+    }
+
+    .services h1, .about h1, .contact h1 {
+        font-size: 2.2em;
+    }
+
+    .service-item h2, .about h2 {
+        font-size: 1.6em;
+    }
+
+    .service-item .service-image, .about-team .team-image {
+        max-width: 100%;
+    }
+
+    .contact-content {
+        padding: 20px;
     }
 }
